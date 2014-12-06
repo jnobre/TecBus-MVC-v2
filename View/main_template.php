@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+   
+    <title>TecBUS</title>
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="./css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<link href="./css/estilo.css" rel="stylesheet" media="screen">
+	<link rel="shortcut icon" href="./IMAGES/logo.png">
+</head>
+<body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#"><img class="logo" src="./IMAGES/logo.png"/>TecBUS</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li <?php if($pagina == 'Index') { ?> class="active" <?php  } ?> ><a  href="Controller_index.php">In&iacute;cio</a></li>
+                <li <?php if($pagina == 'Controller_PontosInteresse') { ?> class="active" <?php  } ?>><a href="Controller_PontosInteresse.php">Pontos de Interesse</a></li>
+                <li <?php if($pagina == 'Controller_Busca') { ?> class="active" <?php  } ?>><a href="Controller_Busca.php">Busca</a></li>
+        				<li <?php if($pagina == 'Controller_ComoChegar') { ?> class="active" <?php  } ?>><a href="Controller_ComoChegar.php">Como Chegar a</a></li>
+        				<li <?php if($pagina == 'Controller_Pesquisar') { ?> class="active" <?php  } ?>><a href="Controller_Pesquisa.php">Pesquisa Avan&ccedil;ada</a></li>
+        				<li <?php if($pagina == 'Controller_EstadoRotas') { ?> class="active" <?php  } ?>><a href="Controller_EstadoRotas.php">Estado das Rotas</a></li>
+              </ul>
+			  
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <!-- Main
+    ================================================== -->
+	<section id="main">
+
+	</section>
+	
+	<!-- /.carousel -->
+	<section id="cabecalho">
+		<div class="container">
+		  <div class="row">
+			<div class="span12">
+				<h1 class="section-header"><?php echo $title; ?></h1>
+			</div>
+		  </div>
+		</div>
+	</section>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+  <br><br>
+	<?php echo $content; ?><!-- inclui o conteudo, juntamente com o template especifico do tipo de pagina -->
+	
+	</div><!-- /.container -->
+	
+	<div class="container marketing">
+    <!-- FOOTER -->
+    <footer>
+	  <hr>
+	  <p class="pull-right"><i class="icon-user"></i> design by <a href="http://andrepcg.me" target="_blank">andrepcg</a></p>
+        <p><strong>TecBUS</strong> - <a href='http://tice.mobilidade.ipn.pt/' target='_blank'>TICE.Mobilidade</a> @ <a href='http://www.uc.pt/' target='_blank'>Universidade de Coimbra</a></p>
+		<p><i class="icon-briefcase"></i> by Bruno Rolo, Jo&atilde;o Nobre</p>
+		
+    </footer>
+	</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</body>
+</html>
