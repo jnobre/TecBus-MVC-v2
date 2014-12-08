@@ -14,6 +14,6 @@
 <div class = "span10">
 
 <h2>Sobre</h2>
-<p><?php echo "OLA " . $body ?></p>
+<p><?php echo  $body ?></p>
 
 </div>
